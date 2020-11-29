@@ -1,0 +1,10 @@
+
+version: '3'
+
+services:
+  avito_task-service:
+    build: ./avito_task
+    volumes:
+      - ./avito_task:/usr/src/app
+    ports:
+      - 5001:80
